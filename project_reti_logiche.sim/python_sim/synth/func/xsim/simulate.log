@@ -1,0 +1,24 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+$finish called at time : 77450100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 190
+Stopped at time : 77450100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 98
+Stopped at time : 77500 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 63
+Stopped at time : 77500 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 62
+Stopped at time : 77500 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 72
+Stopped at time : 77550 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 63
+Stopped at time : 77550 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 62
+Stopped at time : 77550 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 72
+Stopped at time : 77550 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 73
+Stopped at time : 77550 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 80
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 99
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 101
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 102
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 102
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 184
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 185
+Stopped at time : 77550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 186
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 77550100 ps  Iteration: 0  Process: /project_tb/test
+  File: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd
+
+HDL Line: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd:186

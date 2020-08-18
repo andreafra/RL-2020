@@ -1,0 +1,5 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Failure: TEST FALLITO. Expected  42  found 42
+Time: 2550 ns  Iteration: 3  Process: /project_tb/test  File: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_1/new/testbench_1.vhd
+$finish called at time : 2550 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_1/new/testbench_1.vhd" Line 101

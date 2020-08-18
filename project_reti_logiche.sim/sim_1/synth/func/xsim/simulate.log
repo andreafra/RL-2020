@@ -1,0 +1,5 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Failure: Simulation Ended!, TEST PASSATO
+Time: 2550100 ps  Iteration: 2  Process: /project_tb/test  File: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_1/new/testbench_1.vhd
+$finish called at time : 2550100 ps : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_1/new/testbench_1.vhd" Line 103

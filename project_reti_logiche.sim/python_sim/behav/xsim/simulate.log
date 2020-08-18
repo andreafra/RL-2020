@@ -1,0 +1,8 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+$finish called at time : 76450 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" Line 190
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 76550 ns  Iteration: 0  Process: /project_tb/test
+  File: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd
+
+HDL Line: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd:186

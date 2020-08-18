@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_reti_logiche.srcs/sources_1/imports/Desktop/project_reti_logiche.vhd" \
+"../../../../project_reti_logiche.srcs/python_sim/imports/new/python_tb.vhd" \
+
+# Do not sort compile order
+nosort
