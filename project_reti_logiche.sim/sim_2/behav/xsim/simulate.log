@@ -1,0 +1,5 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Failure: Simulation Ended!, TEST PASSATO
+Time: 3250 ns  Iteration: 3  Process: /project_tb/test  File: C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_2/new/tb_edge_cases.vhd
+$finish called at time : 3250 ns : File "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_2/new/tb_edge_cases.vhd" Line 127

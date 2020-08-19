@@ -1,6 +1,6 @@
 -- Author: Andrea Franchini
 -- Mat: 890304 | CP: 10560276
--- SINTETIZZA CHE E' UN PIACERE
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

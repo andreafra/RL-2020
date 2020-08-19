@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andrea/Projects/project_reti_logiche/project_reti_logiche.srcs/sim_2/new/tb_edge_cases.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'

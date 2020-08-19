@@ -17,19 +17,19 @@ signal   mem_o_data,mem_i_data	: std_logic_vector (7 downto 0);
 signal   enable_wire  		: std_logic;
 signal   mem_we		        : std_logic;
 
-type ram_type is array (128 downto 0) of std_logic_vector(7 downto 0);
+type ram_type is array (10 downto 0) of std_logic_vector(7 downto 0);
 
 -- come da esempio su specifica
-signal RAM: ram_type := (0 => std_logic_vector(to_unsigned( 4 , 8)),
+signal RAM: ram_type := (0 => std_logic_vector(to_unsigned( 111 , 8)), -- WZ 1
                          1 => std_logic_vector(to_unsigned( 13 , 8)),
                          2 => std_logic_vector(to_unsigned( 22 , 8)),
                          3 => std_logic_vector(to_unsigned( 31 , 8)),
                          4 => std_logic_vector(to_unsigned( 37 , 8)),
                          5 => std_logic_vector(to_unsigned( 45 , 8)),
                          6 => std_logic_vector(to_unsigned( 77 , 8)),
-                         7 => std_logic_vector(to_unsigned( 91 , 8)),
-                         8 => std_logic_vector(to_unsigned( 42 , 8)),
-			 others => (others =>'0'));
+                         7 => std_logic_vector(to_unsigned( 91 , 8)), -- WZ 7
+                         8 => std_logic_vector(to_unsigned( 94 , 8)), -- addr to encode
+			             others => (others =>'0'));
 
 component project_reti_logiche is
 port (
@@ -69,7 +69,7 @@ end process p_CLK_GEN;
 
 MEM : process(tb_clk)
 begin
-    if tb_clk'event and tb_clk = '1' then
+    if rising_edge(tb_clk) then
         if enable_wire = '1' then
             if mem_we = '1' then
                 RAM(conv_integer(mem_address))  <= mem_i_data;
@@ -84,21 +84,45 @@ end process;
 
 test : process is
 begin 
+    -- init
     wait for 100 ns;
     wait for c_CLOCK_PERIOD;
+    -- start reset
+    tb_rst <= '1';
+    wait for c_CLOCK_PERIOD;
+    -- stop reset
+    tb_rst <= '0';
+    wait for c_CLOCK_PERIOD;
+    -- start encoding
+    tb_start <= '1';
+    wait for c_CLOCK_PERIOD;
+    wait for c_CLOCK_PERIOD * 5;
     tb_rst <= '1';
     wait for c_CLOCK_PERIOD;
     tb_rst <= '0';
     wait for c_CLOCK_PERIOD;
+    -- start encoding again
     tb_start <= '1';
-    wait for c_CLOCK_PERIOD;
+
     wait until tb_done = '1';
     wait for c_CLOCK_PERIOD;
     tb_start <= '0';
     wait until tb_done = '0';
 
-    -- Maschera di output = 0 - 42
-    assert RAM(9) = std_logic_vector(to_unsigned( 42 , 8)) report "TEST FALLITO. Expected  42  found " & integer'image(to_integer(unsigned(RAM(9))))  severity failure;
+    assert RAM(9) = std_logic_vector(to_unsigned( 248 , 8)) report "TEST FALLITO. Expected  248  found " & integer'image(to_integer(unsigned(RAM(9))))  severity failure;
+--    wait for c_CLOCK_PERIOD;
+    
+--    wait for c_CLOCK_PERIOD * 5;
+--    -- start encoding again
+--    tb_start <= '1';
+--    wait for c_CLOCK_PERIOD;
+--    wait until tb_done = '1';
+--    wait for c_CLOCK_PERIOD;
+--    tb_start <= '0';
+--    wait until tb_done = '0';
+
+--    assert RAM(9) = std_logic_vector(to_unsigned( 129 , 8)) report "TEST FALLITO. Expected  129  found " & integer'image(to_integer(unsigned(RAM(9))))  severity failure;
+    
  
     assert false report "Simulation Ended!, TEST PASSATO" severity failure;
 end process test;
